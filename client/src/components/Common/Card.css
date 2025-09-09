@@ -1,0 +1,142 @@
+/* Card Component Styles */
+.card {
+  background: var(--surface-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.card-hover {
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+/* Card Padding */
+.card-padding-none {
+  padding: 0;
+}
+
+.card-padding-small {
+  padding: 1rem;
+}
+
+.card-padding-medium {
+  padding: 1.5rem;
+}
+
+.card-padding-large {
+  padding: 2rem;
+}
+
+/* Card Header */
+.card-header {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Card Content */
+.card-content {
+  flex: 1;
+}
+
+/* Card Footer */
+.card-footer {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+/* Card Variants */
+.card-elevated {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-outlined {
+  border: 2px solid var(--border-color);
+  box-shadow: none;
+}
+
+.card-flat {
+  border: none;
+  box-shadow: none;
+  background: var(--surface-secondary);
+}
+
+/* Card Sizes */
+.card-sm {
+  max-width: 20rem;
+}
+
+.card-md {
+  max-width: 28rem;
+}
+
+.card-lg {
+  max-width: 36rem;
+}
+
+.card-xl {
+  max-width: 48rem;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.card-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.card-grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    border-radius: 0.5rem;
+  }
+  
+  .card-header,
+  .card-footer {
+    padding: 1rem;
+  }
+  
+  .card-padding-medium {
+    padding: 1rem;
+  }
+  
+  .card-padding-large {
+    padding: 1.5rem;
+  }
+}
